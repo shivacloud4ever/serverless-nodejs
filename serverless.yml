@@ -1,5 +1,7 @@
 service: aws-node-rest-api
 
+useDotenv: true
+
 provider:
   name: aws
   runtime: nodejs12.x
