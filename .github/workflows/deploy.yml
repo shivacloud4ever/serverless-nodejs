@@ -22,7 +22,7 @@ jobs:
     - name: Install Serverless Framework
       run: npm i -g serverless
 
-    - run: npm ci
+    - run: npm install
 
     # - name: serverless deploy
     #   uses: serverless/github-action@master
@@ -32,6 +32,9 @@ jobs:
         cat > .env <<EOF
         ${{ secrets.ENV }}
         cat .env
+        npm run config-env
+
+      
 
     - name: Configure AWS credentials from Test account
       uses: aws-actions/configure-aws-credentials@v1
