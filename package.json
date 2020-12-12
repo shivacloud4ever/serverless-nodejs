@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Serverless-Nodejs Welcome Test",
   "main": "handler.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "dotenv": "^8.2.0"
   },
+  "devDependencies": {},
   "scripts": {
     "config-env": "node -r dotenv/config handler.js",
     "test": "echo \"Error: no test specified\" && exit 1"
