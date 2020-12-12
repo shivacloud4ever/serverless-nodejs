@@ -3,7 +3,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 module.exports = {
   apikey: process.env.apikey,
-  region: process.env.region
+  region: process.env.region,
+  public_key: process.env.public_key,
+  private_key: process.env.private_key,
+
 };
 
 
