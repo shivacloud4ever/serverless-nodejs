@@ -19,13 +19,13 @@ jobs:
     - name: Node.js environment
       uses: actions/setup-node@v1
 
-    # - name: Install Serverless Framework
-    #   run: npm i -g serverless
+    - name: Install Serverless Framework
+      run: npm i -g serverless
 
     - run: npm ci
 
-    - name: serverless deploy
-      uses: serverless/github-action@master
+    # - name: serverless deploy
+    #   uses: serverless/github-action@master
 
     - name: create ENV file
       run: |
