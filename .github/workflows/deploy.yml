@@ -19,8 +19,8 @@ jobs:
     - name: Node.js environment
       uses: actions/setup-node@v1
 
-   - name: Install Serverless Framework
-     run: npm i -g serverless
+    - name: Install Serverless Framework
+      run: npm i -g serverless
 
   #  - name: Configure AWS credentials from Test account
   #     uses: aws-actions/configure-aws-credentials@v1
