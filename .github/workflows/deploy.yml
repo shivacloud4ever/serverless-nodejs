@@ -34,7 +34,7 @@ jobs:
     - name: create ENV file
       run: |
         cat > .env <<EOF
-        echo prefix= ${{ env.prefix }}        
+        prefix= ${{ env.prefix }}        
         ${{ secrets.ENV }}
         cat .env
         EOF
