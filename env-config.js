@@ -1,14 +1,14 @@
-// // env-config.js
-// const dotenv = require('dotenv');
-// dotenv.config();
-// module.exports = {
-//   apikey: process.env.apikey,
-//   region: process.env.region,
-//   public_key: process.env.public_key,
-//   private_key: process.env.private_key,
-//   prefix: process.env.prefix,
+// env-config.js
+const dotenv = require('dotenv');
+dotenv.config();
+module.exports = {
+  apikey: process.env.apikey,
+  region: process.env.region,
+  public_key: process.env.public_key,
+  private_key: process.env.private_key,
+  prefix: process.env.prefix,
 
-// };
+};
 
 
 // This way we encounter runtime execution alwasy and need this dotenv module and can't be under dev dependency anymore. so better choose first option.

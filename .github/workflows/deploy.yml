@@ -37,6 +37,7 @@ jobs:
         ${{ secrets.ENV }}
         cat .env
         EOF
+        npm run config-env
 
       
 
