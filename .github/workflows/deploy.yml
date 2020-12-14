@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env: 
       region1 : ap-southeast-2
-      prefix : awesome
+
  
     steps:
     - name: Checkout git repo
@@ -33,8 +33,7 @@ jobs:
 
     - name: create ENV file
       run: |
-        cat > .env <<EOF
-        prefix= ${{ env.prefix }}        
+        cat > .env <<EOF      
         ${{ secrets.ENV }}
         cat .env
         EOF
