@@ -1,9 +1,9 @@
-// server.js
-const { apikey } = require('./env-config');
-const { region } = require('./env-config');
-const { public_key } = require('./env-config');
-const { private_key } = require('./env-config');
-const { prefix } = require('./env-config');
+// // server.js
+// const { apikey } = require('./env-config');
+// const { region } = require('./env-config');
+// const { public_key } = require('./env-config');
+// const { private_key } = require('./env-config');
+// const { prefix } = require('./env-config');
 
 
 
