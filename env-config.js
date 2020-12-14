@@ -6,7 +6,7 @@ module.exports = {
   region: process.env.region,
   public_key: process.env.public_key,
   private_key: process.env.private_key,
-  prefix: process.env.prefix
+  prefix: process.env.prefix,
 
 };
 
