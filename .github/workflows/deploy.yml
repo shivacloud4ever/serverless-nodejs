@@ -10,7 +10,11 @@ on:
 jobs:
   build:
 
+
     runs-on: ubuntu-latest
+    env: 
+      region1 : ap-southeast-2
+      prefix : awesome
  
     steps:
     - name: Checkout git repo
@@ -30,9 +34,11 @@ jobs:
     - name: create ENV file
       run: |
         cat > .env <<EOF
+        echo "region1"= ${{ env.region1 }}
+        echo "prefix"= ${{ env.prefix }}        
         ${{ secrets.ENV }}
         cat .env
-        npm run config-env
+        EOF
 
       
 
