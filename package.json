@@ -4,6 +4,7 @@
   "description": "Serverless-Nodejs Welcome Test",
   "main": "handler.js",
   "dependencies": {
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {},
   "scripts": {
