@@ -34,12 +34,10 @@ jobs:
     - name: create ENV file
       run: |
         cat > .env <<EOF
-        echo "region1"= ${{ env.region1 }}
-        echo "prefix"= ${{ env.prefix }}        
+        echo prefix= ${{ env.prefix }}        
         ${{ secrets.ENV }}
         cat .env
         EOF
-        npm run config-env
 
       
 
